@@ -19,7 +19,7 @@ public class TranTest2Service {
     Logger log = LoggerFactory.getLogger(TranTest2Service.class);
 
     // 线程 1
-   // @PostConstruct // 加上该注解项目启动时就执行一次该方法
+   // @PostConstruct
     @Scheduled(cron="0/2 * *  * * ? ")
     @Async("taskExecutor")
     public void thread1() throws InterruptedException {
@@ -29,7 +29,7 @@ public class TranTest2Service {
     }
 
     // 线程 2
-    //@PostConstruct // 加上该注解项目启动时就执行一次该方法
+    //@PostConstruct
     @Scheduled(cron="0/10 * *  * * ? ")
     @Async("taskExecutor")
     public void thread2() throws InterruptedException {
