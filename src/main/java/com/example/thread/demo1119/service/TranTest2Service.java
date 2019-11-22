@@ -28,7 +28,7 @@ public class TranTest2Service {
         log.info("线程1---- 执行结束");
     }
 
-    // 线程 2
+      // 线程 2
     //@PostConstruct
     @Scheduled(cron="0/10 * *  * * ? ")
     @Async("taskExecutor")
@@ -38,5 +38,7 @@ public class TranTest2Service {
         Thread.sleep(2000);
         log.info("线程2---- 执行结束");
     }
+
+
 
 }

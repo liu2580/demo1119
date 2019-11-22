@@ -1,4 +1,4 @@
-package com.example.thread.demo1119.controller;
+package com.example.thread.demo1119;
 
 import java.util.concurrent.ThreadPoolExecutor;
 import org.springframework.context.annotation.Bean;
